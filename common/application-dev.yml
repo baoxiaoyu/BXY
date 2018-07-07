@@ -1,0 +1,20 @@
+#数据库相关信息
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?createDatabaseIfNotExist&characterEncoding=UTF-8&useUnicode=true&autoReconnect=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    validation-query: SELECT 1
+    test-on-borrow: true
+    test-while-idle: true
+    min-idle: 1
+    max-idle: 5
+    max-active: 100
+    
+
+#上传文件的大小设置
+multipart:
+  maxFileSize: 10MB
+  maxRequestSize: 10MB
+
